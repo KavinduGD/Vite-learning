@@ -17,7 +17,14 @@ export default function BooksForm() {
   };
 
   return (
-    <div style={{ marginTop: "5rem" }}>
+    <div
+      style={{
+        margin: "20px",
+        border: "1px solid black",
+        width: "400px",
+        padding: "20px",
+      }}
+    >
       <h2>Books Form</h2>
 
       <form onSubmit={submitHandler}>
