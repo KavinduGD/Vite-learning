@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useBooksContext } from "../hooks/useBooksContext";
 
-export default function BooksForm() {
+export default function Form() {
   const { dispatch } = useBooksContext();
   const [name, setName] = useState("");
   //console.log(name);
@@ -25,7 +25,7 @@ export default function BooksForm() {
         padding: "20px",
       }}
     >
-      <h2>Books Form</h2>
+      <h2>Form</h2>
 
       <form onSubmit={submitHandler}>
         <input type="text" placeholder="Book Name" onChange={inputHandler} />

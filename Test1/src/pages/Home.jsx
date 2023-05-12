@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BooksList from "../component/BooksList";
+import List from "../component/List";
 import { useBooksContext } from "../hooks/useBooksContext";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div>
         <h2>Home</h2>
-        <BooksList list={state.books} />
+        <List list={state.books} />
       </div>
     </>
   );

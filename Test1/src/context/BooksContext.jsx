@@ -23,11 +23,11 @@ export const BooksContextProvider = ({ children }) => {
     books: [
       {
         id: 1,
-        name: "Book1",
+        name: "Item1",
       },
       {
         id: 2,
-        name: "Book2",
+        name: "Item",
       },
     ],
   });

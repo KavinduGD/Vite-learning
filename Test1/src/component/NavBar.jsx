@@ -9,7 +9,7 @@ export default function NavBar() {
         <Link to="/">Home</Link>
       </div>
       <div>
-        <Link to="/book">Books</Link>
+        <Link to="/book">another</Link>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 import { useBooksContext } from "../hooks/useBooksContext";
-import BooksForm from "../component/BooksForm";
+import Form from "../component/Form";
 import SingleBook from "../component/SingleBook";
-import BooksList from "../component/BooksList";
+import List from "../component/List";
 
-export default function Book(props) {
+export default function Page() {
   const { state } = useBooksContext();
 
   console.log(state);
@@ -26,9 +26,9 @@ export default function Book(props) {
           ))}
         </div>
         <div>
-          <BooksForm />
+          <Form />
         </div>
-        <div> {<BooksList list={state.books} />}</div>
+        <div> {<List list={state.books} />}</div>
       </div>
     </div>
   );
